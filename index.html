@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style src="style.css"></style>
+</head>
+<style>
+    .aa {
+  margin: 90px auto;
+  background-color: lightcyan;
+  width: 25%;
+  border: 3px solid grey;
+  box-shadow: 4px black;
+  padding: 10px 10px 10px 20px;
+}
+    h1{
+        display: inline-block;
+        width: 74px;
+        background-color: black;
+        color: wheat;
+        text-align: center;
+    }
+    button{
+        width: 100px;
+        margin-top: 10px;
+    }
+    .head{
+        border-radius: 1px 1px 1px 1px solid black;
+        background-color: blueviolet;
+        width: 470px;
+        height: 90px;
+        margin: 80px auto;
+        text-align: center; 
+        font-size: 60px;
+    }
+</style>
+<body>
+     <p class="head">STOP WATCH</p>
+
+    <div class="aa">
+    <div>
+        <h1 id="hr">0</h1> &nbsp;
+        <h1 id="min">0</h1> &nbsp;
+        <h1 id="sec">0</h1>&nbsp;
+        <h1 id="msec">0</h1>
+    </div>
+    <div>
+        <button ondblclick="start()">Start</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="pause()">Pause</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="reset()">Reset</button>&nbsp;&nbsp;
+    </div>
+    <p><b>Note : </b> <i>Start on Double Click</i></p>
+</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
